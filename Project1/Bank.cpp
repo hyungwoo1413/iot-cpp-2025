@@ -1,15 +1,6 @@
 ﻿//#include <iostream>
 //#include <cstdlib>
 //
-////class Arr {
-////    int* arr;
-////    int size;
-////    
-////    Arr(int* arr, int size) {
-////        
-////    }
-////};
-//
 //class person_data {
 //public:
 //    std::string id;
@@ -205,17 +196,3 @@
 //    app.run();
 //    return 0;
 //}
-//
-//
-//////
-////int arr[20];
-////// c++ , 
-////selected_sort(arr);
-////----------------
-////
-////// 니가 직접 클래스를 만들어서
-////// 가변배열을 만들어봐
-////
-////Arr arr = new Arr[20];
-//
-//
