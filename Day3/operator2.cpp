@@ -23,7 +23,7 @@ public:
 
 	const Point& add(const Point& other) {
 		printf("add()\n");
-		return Point(x + other.x, y + other.y);
+		return Point (x + other.x, y + other.y);
 	}
 };
 
