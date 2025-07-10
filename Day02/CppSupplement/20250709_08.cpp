@@ -2,7 +2,7 @@
 
 class Myclass {
 private:
-	int id;
+	int id = 10;			// C++ 11 이후 멤버 변수 초기화 가능
 	char name[20];					// 배열이라서 대입이 안됨. strcpy()로 내용을 복사해야 함
 	int age;
 public:
@@ -21,3 +21,8 @@ int main()
 
 	return 0;
 }
+
+
+/*
+	생성자 : 객체를 객성하면서 초기화할 수 있다.
+*/
