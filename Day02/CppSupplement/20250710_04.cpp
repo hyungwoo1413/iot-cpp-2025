@@ -7,6 +7,7 @@ private:
 public:
 	Myclass();
 	void print();
+	void set_a(int _a);
 	static void set_static_a(int _a);		// static 멤버의 값을 변경할 수 있는 기능을 함수(함수의 선언)
 };
 
@@ -14,6 +15,10 @@ int Myclass::static_a = 100;
 
 Myclass::Myclass() {
 	a = 20;
+}
+
+void Myclass::set_a(int _a) {
+	a = _a;
 }
 
 void Myclass::set_static_a(int _a) {
@@ -30,8 +35,10 @@ int main()
 	Myclass obj;
 	obj.print();
 
-	//obj.static_a = 50;		// static 키워드는 모든 객체가 모두 공유(클래스	변수)
-	//obj.a = 77;
+	// obj.static_a = 50;		// static 키워드는 모든 객체가 모두 공유(클래스	변수)
+	// obj.a = 77;
+	obj.set_a(77);
+	Myclass::set_static_a(50);		// static 멤버 변수의 값을 변경하는 함수 호출
 	obj.print();
 
 	Myclass obj2;
